@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: falco
 resources:
   - namespace.yaml
-  - release.yaml
+  - falco-release.yaml
