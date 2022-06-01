@@ -10,6 +10,7 @@ spec:
       httpOutput:
         enabled: true
         url: "http://falco-falcosidekick:2801"
+      logLevel: debug
     falcosidekick:
       enabled: true
       webui:
