@@ -14,3 +14,5 @@ spec:
       enabled: true
       webui:
         enabled: true
+    ebpf:
+      enabled: true
