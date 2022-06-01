@@ -9,7 +9,7 @@ spec:
       jsonIncludeOutputProperty: true
       httpOutput:
         enabled: true
-        url: "http://falco-falcosidekick:2801/"
+        url: "http://falco-falcosidekick:2801"
     falcosidekick:
       enabled: true
       webui:
