@@ -18,4 +18,4 @@ spec:
     ebpf:
       enabled: true
     leastPrivileged:
-      enabled: true
+      enabled: false # The CAP_BPF capability is only added in linux kernel 5.8. For now we need to run ebpf in privileged mode.
