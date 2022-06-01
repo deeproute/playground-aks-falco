@@ -16,3 +16,5 @@ spec:
         enabled: true
     ebpf:
       enabled: true
+    leastPrivileged:
+      enabled: true
