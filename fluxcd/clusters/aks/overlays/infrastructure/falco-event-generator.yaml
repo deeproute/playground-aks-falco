@@ -10,6 +10,11 @@ spec:
   interval: 1m0s
   path: ./fluxcd/infrastructure/falco-event-generator
   prune: true
+  healthChecks:
+  - apiVersion: helm.toolkit.fluxcd.io/v2beta1
+    kind: Deployment
+    name: falco-event-generator-deployment
+    namespace: falco
   sourceRef:
     kind: GitRepository
     name: flux-system

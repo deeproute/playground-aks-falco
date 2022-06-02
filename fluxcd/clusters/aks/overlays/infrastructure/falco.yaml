@@ -9,8 +9,8 @@ spec:
   path: ./fluxcd/infrastructure/falco
   prune: true
   healthChecks:
-  - apiVersion: apps/v1
-    kind: DaemonSet
+  - apiVersion: helm.toolkit.fluxcd.io/v2beta1
+    kind: HelmRelease
     name: falco
     namespace: falco
   sourceRef:

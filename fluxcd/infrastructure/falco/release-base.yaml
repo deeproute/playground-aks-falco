@@ -3,6 +3,14 @@ kind: HelmRelease
 metadata:
   name: falco
 spec:
+  chart:
+    spec:
+      chart: falco
+      sourceRef:
+        kind: HelmRepository
+        name: falcosecurity
+        namespace: flux-system
+  interval: 10m
   values:
     falco:
       jsonOutput: true
