@@ -42,9 +42,9 @@ The `bootstrap.sh`:
 ### Test Sample App
 
 ```sh
-kubectl create deploy nginx-test --image=nginx
+kubectl create deploy mytest --image=nginx
 
-kubectl exec -it $(kubectl get po -l app=nginx-test -oname) -- sh
+kubectl exec -it $(kubectl get po -l app=mytest -oname) -- sh
 
 ```
 

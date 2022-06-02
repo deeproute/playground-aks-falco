@@ -1,6 +1,6 @@
 location = "westeurope"
-resource_group_name = "playground-aks-akv-csi" # if running with bootstrap.sh, don't change here and change there.
-cluster_name = "aks-akv-csi" # if running with bootstrap.sh, don't change here and change there.
+resource_group_name = "playground-aks-falco" # if running with bootstrap.sh, don't forget to change there too.
+cluster_name = "aks-falco" # if running with bootstrap.sh, don't forget to change there too.
 private_cluster_enabled = false
 kubernetes_version = "1.21.9"
 node_count = 1
