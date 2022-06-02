@@ -48,10 +48,10 @@ spec:
       outputs:
         rate: "1000000000"
         maxBurst: "1000000000"
-    falcosidekick:
-      enabled: true
-      webui:
-        enabled: true
+    # falcosidekick:
+    #   enabled: true
+    #   webui:
+    #     enabled: true
     # ebpf:
     #   enabled: true
     # leastPrivileged:
