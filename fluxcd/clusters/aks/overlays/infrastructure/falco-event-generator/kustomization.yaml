@@ -10,11 +10,6 @@ spec:
   interval: 1m0s
   path: ./fluxcd/infrastructure/falco-event-generator
   prune: true
-  healthChecks:
-  - apiVersion: apps/v1
-    kind: DaemonSet
-    name: falco
-    namespace: falco
   sourceRef:
     kind: GitRepository
     name: flux-system
