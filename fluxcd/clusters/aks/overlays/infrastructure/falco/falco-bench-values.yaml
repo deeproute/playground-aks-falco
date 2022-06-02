@@ -1,0 +1,33 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: falco
+spec:
+  values:
+    falco:
+      jsonOutput: true
+      jsonIncludeOutputProperty: true
+      httpOutput:
+        enabled: true
+        url: "http://falco-falcosidekick:2801"
+      logLevel: debug
+    falcosidekick:
+      enabled: true
+      webui:
+        enabled: true
+    ebpf:
+      enabled: true
+    leastPrivileged:
+      enabled: false # The CAP_BPF capability is only added in linux kernel 5.8. Azure is using 5.4. For now we need to run ebpf in privileged mode.
+  postRenderers:
+  - kustomize:
+      patchesJson6902:
+      - target:
+          kind: DaemonSet
+          apiVersion: apps/v1
+          metadata:
+            name: falco
+        patch:
+        - op: add
+          path: /spec/template/spec/containers/0/args/1
+          value: -s

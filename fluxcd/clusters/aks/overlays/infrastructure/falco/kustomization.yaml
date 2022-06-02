@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - ../../../../../infrastructure/falco
 patchesStrategicMerge:
-  - falco-values.yaml
+  - falco-bench-values.yaml
