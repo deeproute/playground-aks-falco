@@ -23,11 +23,11 @@ spec:
           capabilities:
             add: ["NET_ADMIN", "SYS_ADMIN"]
         command:
-        - /bin/event-generator
-        - bench
-        - ChangeThreadNamespace|ReadSensitiveFileUntrusted|WriteBelowBinaryDir
-        - --loop
-        - --pid $(ps -ef | awk '$8=="falco" {print $2}')
+        - "/bin/event-generator"
+        - "bench"
+        - "ChangeThreadNamespace|ReadSensitiveFileUntrusted|WriteBelowBinaryDir"
+        - "--loop"
+        - "--pid $(ps -ef | awk '$8==\"falco\" {print $2}')"
         env:
         - name: FALCO_EVENT_GENERATOR_NAMESPACE
           valueFrom:
