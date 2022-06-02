@@ -24,7 +24,6 @@ spec:
       patchesJson6902:
       - target:
           kind: DaemonSet
-          apiVersion: apps/v1
           name: falco
         patch:
         - op: add
