@@ -2,8 +2,9 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
   name: falco-event-generator
-  namespace: falco
+  namespace: flux-system
 spec:
+  targetNamespace: falco
   dependsOn:
   - name: falco
   force: false

@@ -2,8 +2,9 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
   name: falco
-  namespace: falco
+  namespace: flux-system
 spec:
+  targetNamespace: falco
   force: false
   interval: 1m0s
   path: ./fluxcd/infrastructure/falco
