@@ -27,12 +27,12 @@ spec:
         - "bench"
         - "ChangeThreadNamespace|ReadSensitiveFileUntrusted|WriteBelowBinaryDir"
         - "--loop"
-        - "--pid $(ps -ef | awk '$8==\"falco\" {print $2}')"
+        - "--pid $(ps -ef | awk '$4==\"/usr/bin/falco\" {print $1}')"
         env:
         - name: FALCO_EVENT_GENERATOR_NAMESPACE
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        hostIPC: true # Use the host's ipc namespace https://www.man7.org/linux/man-pages/man7/ipc_namespaces.7.html
-        hostNetwork: true # Use the host's network namespace https://www.man7.org/linux/man-pages/man7/network_namespaces.7.html
-        hostPID: true # Use the host's pid namespace https://man7.org/linux/man-pages/man7/pid_namespaces.7.html
+      hostIPC: true # Use the host's ipc namespace https://www.man7.org/linux/man-pages/man7/ipc_namespaces.7.html
+      hostNetwork: true # Use the host's network namespace https://www.man7.org/linux/man-pages/man7/network_namespaces.7.html
+      hostPID: true # Use the host's pid namespace https://man7.org/linux/man-pages/man7/pid_namespaces.7.html
