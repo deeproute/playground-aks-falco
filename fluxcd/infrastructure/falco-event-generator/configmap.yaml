@@ -5,8 +5,10 @@ metadata:
 data:
   entrypoint.sh: |-
     #!/bin/bash
-    /bin/event-generator bench \
-      "ReadSensitiveFileUntrusted|WriteBelowBinaryDir" \
-      --grpc-unix-socket unix:///var/run/falco/falco.sock  \
-      --loop \
-      --pid $(pidof -s falco)
+
+    timeout 10s \
+      /bin/event-generator bench \
+        "ReadSensitiveFileUntrusted|WriteBelowBinaryDir" \
+        --grpc-unix-socket unix:///var/run/falco/falco.sock  \
+        --loop \
+        --pid $(pidof -s falco)
