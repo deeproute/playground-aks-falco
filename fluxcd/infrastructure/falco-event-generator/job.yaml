@@ -1,18 +1,11 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Job
 metadata:
-  name: falco-event-generator-deployment
+  name: falco-event-generator
   labels:
     app: falco-event-generator
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: falco-event-generator
   template:
-    metadata:
-      labels:
-        app: falco-event-generator
     spec:
       serviceAccount: falco-event-generator
       containers:
