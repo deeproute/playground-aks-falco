@@ -8,6 +8,7 @@ spec:
   template:
     spec:
       serviceAccount: falco-event-generator
+      restartPolicy: Never
       containers:
       - name: falco-event-generator
         image: falcosecurity/event-generator
