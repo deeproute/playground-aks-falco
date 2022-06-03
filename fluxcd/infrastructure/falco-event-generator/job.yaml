@@ -5,6 +5,7 @@ metadata:
   labels:
     app: falco-event-generator
 spec:
+  backoffLimit: 1
   template:
     spec:
       serviceAccount: falco-event-generator
