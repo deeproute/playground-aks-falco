@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: script
+data:
+  entrypoint.sh: |-
+    #!/bin/bash
+    /bin/event-generator bench \
+      "ChangeThreadNamespace|ReadSensitiveFileUntrusted|WriteBelowBinaryDir" \
+      --grpc-unix-socket unix:///var/run/falco/falco.sock  \
+      --loop \
+      --pid $(pidof -s falco)
