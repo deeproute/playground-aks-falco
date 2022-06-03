@@ -4,4 +4,4 @@ namespace: falco
 resources:
   - rolebindings.yaml
   - configmap.yaml
-  - deployment.yaml
+  - job.yaml
