@@ -22,6 +22,7 @@ spec:
         securityContext:
           capabilities:
             add: ["NET_ADMIN", "SYS_ADMIN"]
+          runAsUser: 0
         command:
         - /bin/entrypoint.sh
         volumeMounts:
