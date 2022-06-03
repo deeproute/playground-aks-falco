@@ -6,7 +6,7 @@ data:
   entrypoint.sh: |-
     #!/bin/bash
 
-    timeout 10s \
+    timeout 300s \
       /bin/event-generator bench \
         "ReadSensitiveFileUntrusted|WriteBelowBinaryDir" \
         --grpc-unix-socket unix:///var/run/falco/falco.sock  \
