@@ -26,6 +26,8 @@ spec:
         command:
         - /bin/entrypoint.sh
         volumeMounts:
+        - name: falco-sock
+          mountPath: /var/run/falco/falco.sock
         - name: script
           mountPath: /bin/entrypoint.sh
           readOnly: true
@@ -36,6 +38,11 @@ spec:
             fieldRef:
               fieldPath: metadata.namespace
       volumes:
+      - name: falco-sock
+        hostPath:
+          path: /var/run/falco/falco.sock
+          type: socket
+
       - name: script
         configMap:
           defaultMode: 0700
