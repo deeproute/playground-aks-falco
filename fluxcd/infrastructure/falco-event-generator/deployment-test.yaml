@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: falco-event-generator-test
+  labels:
+    app: falco-event-generator-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: falco-event-generator-test
+  template:
+    metadata:
+      labels:
+        app: falco-event-generator-test
+    spec:
+      serviceAccount: falco-event-generator
+      containers:
+      - name: falco-event-generator
+        image: falcosecurity/event-generator
+        imagePullPolicy: Always
+        securityContext:
+          capabilities:
+            add: ["NET_ADMIN", "SYS_ADMIN"]
+          runAsUser: 0
+        command:
+        - /bin/entrypoint.sh
+        volumeMounts:
+        - name: script
+          mountPath: /bin/entrypoint.sh
+          readOnly: true
+          subPath: entrypoint.sh
+        env:
+        - name: FALCO_EVENT_GENERATOR_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+      volumes:
+      - name: script
+        configMap:
+          defaultMode: 0700
+          name: script-test
+      hostIPC: true # Use the host's ipc namespace https://www.man7.org/linux/man-pages/man7/ipc_namespaces.7.html
+      hostNetwork: true # Use the host's network namespace https://www.man7.org/linux/man-pages/man7/network_namespaces.7.html
+      hostPID: true # Use the host's pid namespace https://man7.org/linux/man-pages/man7/pid_namespaces.7.html

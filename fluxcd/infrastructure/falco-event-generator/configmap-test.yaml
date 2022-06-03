@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: script-test
+data:
+  entrypoint.sh: |-
+    #!/bin/bash
+
+    ls /var/run
+
+    sleep infinity
+    
