@@ -27,7 +27,9 @@ spec:
         - "bench"
         - "ChangeThreadNamespace|ReadSensitiveFileUntrusted|WriteBelowBinaryDir"
         - "--loop"
-        - "--pid $(ps -ef | awk '$4==\"/usr/bin/falco\" {print $1}')"
+        - "--grpc-unix-socket"
+        - "unix:///var/run/falco/falco.sock"
+        - "--pid $(pidof -s falco)"
         env:
         - name: FALCO_EVENT_GENERATOR_NAMESPACE
           valueFrom:
