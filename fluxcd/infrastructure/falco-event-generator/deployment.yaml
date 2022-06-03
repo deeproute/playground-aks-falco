@@ -30,7 +30,7 @@ spec:
         - "--grpc-unix-socket"
         - "unix:///var/run/falco/falco.sock"
         - "--pid" 
-        - "$(pidof -s falco)"
+        - $(pidof -s falco)
         env:
         - name: FALCO_EVENT_GENERATOR_NAMESPACE
           valueFrom:
