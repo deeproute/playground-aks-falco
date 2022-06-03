@@ -41,8 +41,7 @@ spec:
       - name: falco-sock
         hostPath:
           path: /var/run/falco/falco.sock
-          type: socket
-
+          type: Socket
       - name: script
         configMap:
           defaultMode: 0700
