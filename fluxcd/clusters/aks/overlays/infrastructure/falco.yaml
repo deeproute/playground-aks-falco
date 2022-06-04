@@ -6,7 +6,7 @@ metadata:
 spec:
   targetNamespace: falco
   force: false
-  interval: 1m0s
+  interval: 0m20s
   path: ./fluxcd/infrastructure/falco
   prune: true
   healthChecks:
