@@ -50,4 +50,10 @@ kubectl exec -it $(kubectl get po -l app=mytest -oname) -- sh
 
 ## References
 
+- [Falco Event Generator in k8s](https://falco.org/docs/event-sources/sample-events)
 - [Falco + Falcosidekick + Falcosidekick-ui](https://github.com/falcosecurity/charts/tree/master/falcosidekick#with-helm-chart-of-falco)
+- [How to start a pod with root & host namespaces](https://downey.io/notes/dev/kubernetes-privileged-root-pod-example)
+- [K8s Docs about mounting Unix Sockets](https://kubernetes.io/docs/concepts/storage/volumes/#hostpath)
+- [How to create a pod with a shell script in a ConfigMap](https://stackoverflow.com/questions/33887194/how-to-set-multiple-commands-in-one-yaml-file-with-kubernetes)
+- [How to use the timeout command](https://stackoverflow.com/questions/7851889/kill-process-after-a-given-time-bash)
+- [The timeout command docs](https://www.gnu.org/software/coreutils/manual/html_node/timeout-invocation.html)

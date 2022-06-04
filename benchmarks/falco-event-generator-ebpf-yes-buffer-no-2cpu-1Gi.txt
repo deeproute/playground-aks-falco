@@ -1,0 +1,179 @@
+INFO round #1                                      sleep=100ms
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=25 expected=25 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=25 expected=25 ratio=1
+INFO statistics                                    cpu="1.8%" lost="0%" res_mem="164 MB" throughput="10.0 EPS" virt_mem="1.3 GB"
+INFO                                              
+INFO round #2                                      sleep=50ms
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=50 expected=50 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=50 expected=50 ratio=1
+INFO statistics                                    cpu="1.8%" lost="0%" res_mem="164 MB" throughput="20.0 EPS" virt_mem="1.3 GB"
+INFO                                              
+INFO round #3                                      sleep=25ms
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=99 expected=99 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=99 expected=99 ratio=1
+INFO statistics                                    cpu="2.1%" lost="0%" res_mem="164 MB" throughput="39.6 EPS" virt_mem="1.3 GB"
+INFO                                              
+INFO round #4                                      sleep=12.5ms
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=190 expected=190 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=191 expected=191 ratio=1
+INFO statistics                                    cpu="2.3%" lost="0%" res_mem="164 MB" throughput="76.2 EPS" virt_mem="1.3 GB"
+INFO                                              
+INFO round #5                                      sleep=6.25ms
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=350 expected=350 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=349 expected=349 ratio=1
+INFO statistics                                    cpu="3.3%" lost="0%" res_mem="164 MB" throughput="139.8 EPS" virt_mem="1.3 GB"
+INFO                                              
+INFO round #6                                      sleep=3.125ms
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=609 expected=609 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=610 expected=610 ratio=1
+INFO statistics                                    cpu="3.9%" lost="0%" res_mem="164 MB" throughput="243.8 EPS" virt_mem="1.3 GB"
+INFO                                              
+INFO round #7                                      sleep=1.5625ms
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=1153 expected=1153 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=1152 expected=1152 ratio=1
+INFO statistics                                    cpu="5.6%" lost="0%" res_mem="164 MB" throughput="461.0 EPS" virt_mem="1.3 GB"
+INFO                                              
+INFO round #8                                      sleep="781.25µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=2240 expected=2240 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=2240 expected=2240 ratio=1
+INFO statistics                                    cpu="9.7%" lost="0%" res_mem="164 MB" throughput="896.0 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #9                                      sleep="390.625µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=2291 expected=2291 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=2291 expected=2291 ratio=1
+INFO statistics                                    cpu="10.2%" lost="0%" res_mem="165 MB" throughput="916.4 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #10                                     sleep="195.312µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=2387 expected=2387 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=2387 expected=2387 ratio=1
+INFO statistics                                    cpu="9.8%" lost="0%" res_mem="165 MB" throughput="954.8 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #11                                     sleep="97.656µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=2517 expected=2517 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=2518 expected=2518 ratio=1
+INFO statistics                                    cpu="10.9%" lost="0%" res_mem="165 MB" throughput="1007.0 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #12                                     sleep="48.828µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=2730 expected=2730 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=2729 expected=2729 ratio=1
+INFO statistics                                    cpu="11.1%" lost="0%" res_mem="165 MB" throughput="1091.8 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #13                                     sleep="24.414µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=2946 expected=2946 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=2946 expected=2946 ratio=1
+INFO statistics                                    cpu="11.5%" lost="0%" res_mem="165 MB" throughput="1178.4 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #14                                     sleep="12.207µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=5086 expected=5086 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=5086 expected=5086 ratio=1
+INFO statistics                                    cpu="20.0%" lost="0%" res_mem="166 MB" throughput="2034.4 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #15                                     sleep="6.103µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=15024 expected=15024 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=15023 expected=15023 ratio=1
+INFO statistics                                    cpu="55.7%" lost="0%" res_mem="169 MB" throughput="6009.4 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #16                                     sleep="3.051µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=16727 expected=16727 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=16728 expected=16728 ratio=1
+INFO statistics                                    cpu="60.8%" lost="0%" res_mem="170 MB" throughput="6691.0 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #17                                     sleep="1.525µs"
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=17476 expected=17476 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=17476 expected=17476 ratio=1
+INFO statistics                                    cpu="63.8%" lost="0%" res_mem="170 MB" throughput="6990.4 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #18                                     sleep=762ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=18520 expected=18520 ratio=1
+INFO syscall.ReadSensitiveFileUntrusted            actual=18520 expected=18520 ratio=1
+INFO statistics                                    cpu="66.7%" lost="0%" res_mem="171 MB" throughput="7408.0 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #19                                     sleep=381ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=28723 expected=28780 ratio=0.9980194579569145
+INFO syscall.ReadSensitiveFileUntrusted            actual=28721 expected=28779 ratio=0.9979846415789291
+INFO statistics                                    cpu="105.9%" lost="0%" res_mem="174 MB" throughput="11511.8 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #20                                     sleep=190ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=32084 expected=44441 ratio=0.7219459508111878
+INFO syscall.ReadSensitiveFileUntrusted            actual=32084 expected=44442 ratio=0.7219297061338373
+INFO statistics                                    cpu="115.2%" lost="27%" res_mem="176 MB" throughput="17776.6 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #21                                     sleep=95ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=34227 expected=47866 ratio=0.7150587055530021
+INFO syscall.ReadSensitiveFileUntrusted            actual=34224 expected=47867 ratio=0.7149810934464245
+INFO statistics                                    cpu="121.0%" lost="28%" res_mem="180 MB" throughput="19146.6 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #22                                     sleep=47ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=34643 expected=50300 ratio=0.688727634194831
+INFO syscall.ReadSensitiveFileUntrusted            actual=34642 expected=50299 ratio=0.6887214457543888
+INFO statistics                                    cpu="122.6%" lost="31%" res_mem="180 MB" throughput="20119.8 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #23                                     sleep=23ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=33405 expected=46693 ratio=0.7154177285674512
+INFO syscall.ReadSensitiveFileUntrusted            actual=33400 expected=46693 ratio=0.7153106461353951
+INFO statistics                                    cpu="119.0%" lost="28%" res_mem="185 MB" throughput="18677.2 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #24                                     sleep=11ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=31895 expected=46819 ratio=0.681240522010295
+INFO syscall.ReadSensitiveFileUntrusted            actual=31899 expected=46820 ratio=0.6813114053823153
+INFO statistics                                    cpu="114.6%" lost="31%" res_mem="186 MB" throughput="18727.8 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #25                                     sleep=5ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=35064 expected=46104 ratio=0.7605413846954711
+INFO syscall.ReadSensitiveFileUntrusted            actual=35062 expected=46103 ratio=0.7605145001409886
+INFO statistics                                    cpu="124.7%" lost="23%" res_mem="186 MB" throughput="18441.4 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #26                                     sleep=2ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=35674 expected=46754 ratio=0.7630149292039183
+INFO syscall.ReadSensitiveFileUntrusted            actual=35666 expected=46755 ratio=0.7628275050796707
+INFO statistics                                    cpu="126.5%" lost="23%" res_mem="186 MB" throughput="18701.8 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #27                                     sleep=1ns
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=35167 expected=44321 ratio=0.7934613388687078
+INFO syscall.ReadSensitiveFileUntrusted            actual=35165 expected=44320 ratio=0.7934341155234657
+INFO statistics                                    cpu="126.0%" lost="20%" res_mem="186 MB" throughput="17728.2 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #28                                     sleep=0s
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=34753 expected=50626 ratio=0.6864654525342709
+INFO syscall.ReadSensitiveFileUntrusted            actual=34756 expected=50626 ratio=0.686524710623
+INFO statistics                                    cpu="123.5%" lost="31%" res_mem="191 MB" throughput="20250.4 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #29                                     sleep=0s
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=30310 expected=48093 ratio=0.6302372486640467
+INFO syscall.ReadSensitiveFileUntrusted            actual=30315 expected=48094 ratio=0.6303281074562316
+INFO statistics                                    cpu="107.3%" lost="36%" res_mem="197 MB" throughput="19237.4 EPS" virt_mem="1.4 GB"
+INFO                                              
+INFO round #30                                     sleep=0s
+INFO resting...                                   
+INFO syscall.WriteBelowBinaryDir                   actual=31275 expected=49473 ratio=0.6321629979989085
+INFO syscall.ReadSensitiveFileUntrusted            actual=31274 expected=49472 ratio=0.6321555627425615
+INFO statistics                                    cpu="113.3%" lost="36%" res_mem="197 MB" throughput="19789.0 EPS" virt_mem="1.4 GB"
