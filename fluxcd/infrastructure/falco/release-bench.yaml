@@ -18,7 +18,7 @@ spec:
         cpu: 100m
         memory: 512Mi
       limits:
-        cpu: 2000m
+        cpu: 1000m
         memory: 1024Mi
     falco:
       grpc:
@@ -33,10 +33,10 @@ spec:
         rate: "1000000000"
         maxBurst: "1000000000"
 
-    # ebpf:
-    #   enabled: true
-    # leastPrivileged:
-    #   enabled: false # The CAP_BPF capability is only added in linux kernel 5.8. Azure is using 5.4. For now we need to run ebpf in privileged mode.
+    ebpf:
+      enabled: true
+    leastPrivileged:
+      enabled: false # The CAP_BPF capability is only added in linux kernel 5.8. Azure is using 5.4. For now we need to run ebpf in privileged mode.
     
   postRenderers:
   - kustomize:
