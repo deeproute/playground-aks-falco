@@ -128,6 +128,7 @@ The most interesting column is the `Avg. Success EPS`. The higher the better. Th
 - [Event Generator in k8s](https://falco.org/docs/event-sources/sample-events)
 - [Actions for dropped system call events](https://falco.org/docs/event-sources/dropped-events)
 - [GH Issue syscall drops](https://github.com/falcosecurity/falco/issues/1870)
+- [Falco Helm Chart Values](https://github.com/falcosecurity/charts/blob/master/falco/values.yaml)
 - [Falco + Falcosidekick + Falcosidekick-ui](https://github.com/falcosecurity/charts/tree/master/falcosidekick#with-helm-chart-of-falco)
 
 
