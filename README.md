@@ -104,15 +104,15 @@ kubectl -n falco logs falco-event-generator-xxxxx
 Below is the various ways that I benchmarked the `Falco` pod. Check the reports in the [benchmarks](benchmarks) folder.
 The most interesting column is the `Avg. Success EPS`. The higher the better. The formula is `EPS round with drops` x `% Success`.
 
-| Falco DS Config |        |              |                | Event Gen Results |                      |           |                  |                                                        |
-|-----------------|--------|--------------|----------------|-------------------|----------------------|-----------|------------------|--------------------------------------------------------|
-| CPUs            | Memory | eBPF enabled | Buffer enabled | Round with drops  | EPS round with drops | % Success | Avg. Success EPS | Report File                                            |
-| 1               | 1Gi    | No           | No             | 16                | 11134.6              | 89.90%    | 10010.0054       | falco-event-generator-ebpf-no-buffer-no-1cpu-1Gi.txt   |
-| 2               | 1Gi    | No           | No             | 20                | 25312.2              | 62.69%    | 15868.21818      | falco-event-generator-ebpf-no-buffer-no-2cpu-1Gi.txt   |
-| 1               | 1Gi    | Yes          | No             | 16                | 10362.6              | 89.30%    | 9253.8018        | falco-event-generator-ebpf-yes-buffer-no-1cpu-1Gi.txt  |
-| 2               | 1Gi    | Yes          | No             | 21                | 19146.6              | 71.50%    | 13689.819        | falco-event-generator-ebpf-yes-buffer-no-2cpu-1Gi.txt  |
-| 1               | 1Gi    | Yes          | Yes            | 15                | 9180.2               | 93.80%    | 8611.0276        | falco-event-generator-ebpf-yes-buffer-yes-1cpu-1Gi.txt |
-| 2               | 1Gi    | Yes          | Yes            | 20                | 17703.2              | 76.40%    | 13525.2448       | falco-event-generator-ebpf-yes-buffer-yes-2cpu-1Gi.txt |
+| Falco Config |     |      |        |  Results |                      |           |             |                                                        |
+|--------------|-----|------|--------|----------|----------------------|-----------|-------------|--------------------------------------------------------|
+| CPUs         | Mem | eBPF | Buffer | Round    | EPS round with drops | % Success | Avg. EPS    | Report File                                            |
+| 1            | 1Gi | No   | No     | 16       | 11134.6              | 89.90%    | 10010.0054  | falco-event-generator-ebpf-no-buffer-no-1cpu-1Gi.txt   |
+| 2            | 1Gi | No   | No     | 20       | 25312.2              | 62.69%    | 15868.21818 | falco-event-generator-ebpf-no-buffer-no-2cpu-1Gi.txt   |
+| 1            | 1Gi | Yes  | No     | 16       | 10362.6              | 89.30%    | 9253.8018   | falco-event-generator-ebpf-yes-buffer-no-1cpu-1Gi.txt  |
+| 2            | 1Gi | Yes  | No     | 21       | 19146.6              | 71.50%    | 13689.819   | falco-event-generator-ebpf-yes-buffer-no-2cpu-1Gi.txt  |
+| 1            | 1Gi | Yes  | Yes    | 15       | 9180.2               | 93.80%    | 8611.0276   | falco-event-generator-ebpf-yes-buffer-yes-1cpu-1Gi.txt |
+| 2            | 1Gi | Yes  | Yes    | 20       | 17703.2              | 76.40%    | 13525.2448  | falco-event-generator-ebpf-yes-buffer-yes-2cpu-1Gi.txt |
 
 ### Benchmark Observations
 
