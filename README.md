@@ -11,7 +11,6 @@ To run with `bootstrap.sh` script, the following CLI tools need to be installed:
 - az
 - gh
 - flux
-- kubectl (optional, only needed if you are running the test app)
 
 ## Infrastructure
 
