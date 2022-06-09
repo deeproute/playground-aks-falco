@@ -116,7 +116,7 @@ The most interesting column is the `Avg. Success EPS`. The higher the better. Th
 ### Benchmark Observations
 
 - The higher the number of CPUs, the better `Falco` performs.
-- Using `eBPF` is slower
+- Using `eBPF` is slower. Same benchmarks results mentioned by the [Falco Community](https://github.com/falcosecurity/libs/issues/267).
 - Using `Buffer` is slower
 - Increasing the memory doesn't affect performance
 
@@ -125,6 +125,7 @@ The most interesting column is the `Avg. Success EPS`. The higher the better. Th
 
 - [Performance Testing](https://falco.org/blog/falco-performance-testing)
 - [Event Generator in k8s](https://falco.org/docs/event-sources/sample-events)
+- [Slow eBPF](https://github.com/falcosecurity/libs/issues/267)
 - [Actions for dropped system call events](https://falco.org/docs/event-sources/dropped-events)
 - [GH Issue syscall drops](https://github.com/falcosecurity/falco/issues/1870)
 - [Falco Helm Chart Values](https://github.com/falcosecurity/charts/blob/master/falco/values.yaml)
